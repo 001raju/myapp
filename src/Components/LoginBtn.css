@@ -1,4 +1,4 @@
-.box{
+/* .box{
     background-color: rgb(223, 224, 243);
     border: 10px;
     border: solid;
@@ -8,4 +8,8 @@
     
 
     
+} */
+.btn{
+    
+    float: right;
 }

@@ -1,3 +1,35 @@
-body {
-  margin: none;
+
+nav {
+  display: flex;
+  background-color: rgb(171, 222, 171);
+  
+  border:10px;
+  padding: 20px;
+  
+}
+
+nav > ul{
+ list-style: none;  
+} 
+
+ul > li{
+ display: inline;
+ padding: 40px;
+
+}
+
+li > a {
+ text-decoration: none;
+ color: black;
+ 
+}
+ .btn {
+  color: red;
+  background-color: blue;
+  padding: 0%;
+  place-items: 50px;
+  
+  
+ 
+  
 }

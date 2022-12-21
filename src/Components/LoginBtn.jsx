@@ -1,5 +1,5 @@
 // import {useState} from "react"
-// import "./LoginBtn.css";
+import "./LoginBtn.css";
 
  function LoginBtn(){
     // const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,7 @@
         <div class = "btn">
             <button onClick ="displayLogin">Log In</button>
         </div>
-        <div class="loginBox">
+        {/* <div class="loginBox">
           <div>
             <label htmlFor="">Name</label>
             <input type="text" />
@@ -19,8 +19,8 @@
           <div>
             <label htmlFor="">Password</label>
             <input type="password" />
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </>
     );
 }
