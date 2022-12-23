@@ -10,6 +10,11 @@ import ErrorPage from './Components/ErrorPage';
 
 
 function App() {
+  // const displayLogin = ()=>{
+  //   return(
+  //     <div></div>
+  //   );
+  // }
   return (
     <div>
       <BrowserRouter>
@@ -24,20 +29,22 @@ function App() {
             <li>
               <Link to="AboutUs">AboutUs</Link>
             </li>
-            <li class = "btn">
-            
-            <button onClick ="displayLogin">Log In</button>
-        
+            <li  >
+              <Link className="btn" to="login">Log In</Link>
             </li>
           </ul>
         </nav>
+
+        
+        
 
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="home" element={<HomePage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="aboutus" element={<AboutUs />} />
-          <Route path="*" element={<>{<ErrorPage />}</>} />
+          <Route path="login" element ={<LoginBtn/>}/>
+          <Route path="*" element={<ErrorPage />}/>
         </Routes>
       </BrowserRouter>
     </div>

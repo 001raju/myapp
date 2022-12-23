@@ -23,12 +23,20 @@ li > a {
  color: black;
  
 }
- .btn {
+
+.btn {
   color: red;
-  background-color: blue;
-  padding: 0%;
-  place-items: 50px;
+  background-color: rgb(110, 110, 119);
+  padding-left: 150px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  place-items: 50px; 
+  margin: 0%;
+  float: right;
   
+  
+  
+
   
  
   
