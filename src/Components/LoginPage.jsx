@@ -1,26 +1,30 @@
-const LoginPage = () => {
-    let personName = document.getElementById("IdName");
-    let personPassword = document.getElementById("IdPassword");
+ import './LoginPage.css';
+
+ const LoginPage = () => {
+    // let personName = document.getElementById("IdName");
+    // let personPassword = document.getElementById("IdPassword");
 
     const displayInfo =()=>{
         
-            console.log(personName)
-            console.log(personPassword)
+            console.log("The name is "+ document.getElementById("IdName").value);
+            console.log("The password is " + document.getElementById("IdPassword").value);
+            document.querySelector(".bigModal").style.display = "none";
+            
         
     };
     return (
-      <div>
-        <div class="container">
+      <div class ='bigModal'>
+        <div class='container'>
           <div>
-            <label>name</label>
+            <label for = "IdName">name</label>
             <input id="IdName" type="text" />
           </div>
           <div>
-            <label>password</label>
+            <label for = "IdPassword">password</label>
             <input id="IdPassword" type="password" />
           </div>
           <div>
-            <button onClick = {displayInfo} type="buton">
+            <button  onClick={displayInfo} type="buton">
               ok
             </button>
           </div>

@@ -26,8 +26,11 @@ li > a {
 
 .btn {
   color: red;
-  background-color: rgb(110, 110, 119);
-  padding-left: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+  /* width: 0px; */
+  /* background-color: rgb(110, 110, 119); */
+  padding-left: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
   place-items: 50px; 

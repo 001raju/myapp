@@ -3,13 +3,14 @@ import HomePage from './Components/HomePage';
 import ContactPage from "./Components/ContactPage";
 import AboutUs from "./Components/AboutPage";
 import LoginBtn from "./Components/LoginBtn";
-
 import './App.css';
 import ErrorPage from './Components/ErrorPage';
+import { useState } from "react";
 
 
 
 function App() {
+  const [ userName, setUserName] = useState(<Link className="btn" to="login">Log In</Link>);
   // const displayLogin = ()=>{
   //   return(
   //     <div></div>
@@ -29,8 +30,8 @@ function App() {
             <li>
               <Link to="AboutUs">AboutUs</Link>
             </li>
-            <li  >
-              <Link className="btn" to="login">Log In</Link>
+            <li>
+              {userName}
             </li>
           </ul>
         </nav>
